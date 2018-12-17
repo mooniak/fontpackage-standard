@@ -1,1 +1,1 @@
-# fontmanpkg-spec
+# fontpackage
