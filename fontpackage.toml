@@ -1,0 +1,77 @@
+[fontpackage]
+name = "My Font Family"
+version =
+license =
+summary =
+status = ""
+description =
+homepage = "..."
+repository = [ url = "", type = "github"]
+issuesURL = " "
+date_published = ""
+fontlog = ""
+readme = ""
+download_url = ""
+designers = [ { name = "", email = "", url = "" },
+              { name = "", email = "", url = "" },
+              { name = "", email = "", url = "" }]
+billboards = [ banner = "",
+           thumbnail= "",
+           large = "" ]
+
+
+[[fonts]]
+name = ""
+style = ""
+weight =
+filename = ""
+post_script_name = ""
+full_name = ""
+copyright = ""
+preview_image = ""
+protected = ""
+purpose = ""
+variable_font = ""
+format = ""
+free = ""
+
+
+[foundry]
+name =
+vendor_id =
+description =
+url =
+email =
+backgroundColor =
+support_email =
+skype =
+twitter =
+facebook =
+instagram =
+
+[tags]
+category = "MONOSPACE" #serif, sans, display, monospace, script
+tags = "" # Blackletter, Calligraphic, Condensed, Decorative, Display, Handdrawn, Monospaced, Rounded, Sans-serif, Script, Serif, Slab, Stencil, Symbols"
+contrast = [ ]
+width = [  ]
+body_height = [ ]
+intended_use = # large, medium, text, body, branding
+figures = # Proportional Tabular Lining Non-Lining Ordinals Fractions Subscript Superscript Slashed Zero
+default_figure_style =
+languages =
+similar_fonts =
+
+[links]
+font_in_use = #
+googlefonts =
+fontlibrary_org =
+
+[distribution]
+targets = ""
+version_manager = 'github'
+releases_channels = [ { nightly ="", git_branch ="" },
+                      { beta = "", git_branch ="" } ]
+
+[develop]
+tools = ""
+build = ""
