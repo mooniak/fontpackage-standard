@@ -19,18 +19,6 @@ designers = [
   { name = "", email = "", url = "" },
   { name = "", email = "", url = "" } ]
 
-tags = [
-  { category = "MONOSPACE"}, #serif, sans, display, monospace, script
-  { style = "" }, # Blackletter, Calligraphic, Condensed, Decorative, Display, Handdrawn, Monospaced, Rounded, Sans-serif, Script, Serif, Slab, Stencil, Symbols"
-  { contrast = "" },
-  { width =  "" },
-  { body_height =  "" },
-  { intended_use =  ""}, # large, medium, text, body, branding
-  { figures =  ""}, # Proportional Tabular Lining Non-Lining Ordinals Fractions Subscript Superscript Slashed Zero
-  { default_figure_style = "" },
-  { languages =  "" },
-  { similar_fonts =  "" }]
-
 private = ""
 maintenance = { status = "", comment = "" } # `actively-developed`, `passively-maintained`, `as-is`, `experimental`, `looking-for-maintainer`, `deprecated`, and the default `none`,}
 state = [
@@ -42,13 +30,29 @@ state = [
   { hinting = "" , comment = "" },
   { opentype_features = "", comment = ""}]
 
+tags = [
+  { category = ""}, #serif, sans, display, monospace, script
+  { style = "" }, # Blackletter, Calligraphic, Condensed, Decorative, Display, Handdrawn, Monospaced, Rounded, Sans-serif, Script, Serif, Slab, Stencil, Symbols"
+  { contrast = "" },
+  { width =  "" },
+  { body_height =  "" },
+  { intended_use =  ""}, # large, medium, text, body, branding
+  { figures =  ""}, # Proportional Tabular Lining Non-Lining Ordinals Fractions Subscript Superscript Slashed Zero
+  { default_figure_style = "" },
+  { languages =  "" },
+  { related_fonts =  "" }, ]
+
+# Font specific display strings. Can be used by clients to display font package and test
 print_specimen_url = ""
 
+# Font specific display strings. Can be used by clients to display font package and test
 display_texts = [
   { en_US = ""},
   { si_LK= ""},
   { dv_IN= ""}]
 
+# Display images and promotional banners
+# Maps to Typw.World billboards
 display_images = [
     { banner = ""},
     { small= ""},
@@ -57,6 +61,7 @@ display_images = [
     { small= ""},
     { large = ""} ]
 
+# External links and release channels
 links = [
     { font_in_use = "" }, #
     { googlefonts = "" },
@@ -68,9 +73,8 @@ release_channels = [
   { name = "ALPHA", url = "" },
   { name = "BETA", url = "" } ]
 
-publish = ["npm", "typeworld", "appstream" ]
-
-
+# List of fonts. objects for Type.World
+# TODO
 [[fonts]]
 name = ""
 style = ""
@@ -87,8 +91,11 @@ variable_font = ""
 format = ""
 free = ""
 
+[[fonts]]
+# ...
 
 
+# Additional metadata and configuration for Type.World app
 [fontpackage.typeworld]
 foundry = [
     { name = "" },
@@ -103,22 +110,23 @@ foundry = [
     { instagram = "" }]
 versions = { manager = "github-tags", filter = "" }
 
-
-
+# Details realted to font development and tools needed for building. Could include build details
 [develop]
-tools = ""
+tools = "" # Maps to tools key in UFR
+# TODO
 
+# Build
+[fontmake]
+config = ""
+
+# Configuration for fontbakery
+# TODO
 [fontbakery]
 tests = ""
 
 [publish]
+[publish.npm]
 config = [""]
 name = ""
 name_suffix = ""
-keywords = ["typeface", "font", "font family", "aileron"]
-
-[appstream]
-config = [""]
-name = ""
-name_suffix = ""
-keywords = ["typeface", "font", "font family", "aileron"]
+keywords = ["typeface", "font", "font family"]
