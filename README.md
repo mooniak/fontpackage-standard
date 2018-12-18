@@ -1,6 +1,12 @@
-# fontpackage
+# Fontpackage specification
 
-## Case for the `fontpackage` standard
+**Version 0.1.0**
+
+**Status: Experimental, unstable draft**
+
+## Introduction
+
+<TODO>
 - Support Type.World subscription
 - Universal metadata format for fonts
 - Accommodate automation building, testing and distributing libre fonts with common tooling and workflows   
@@ -8,8 +14,6 @@
 ## Type.World Git subscription (Github)
 
 We will try to work with standard git artifacts primarily and develop the standard to be provider-agnostic.
-
-Users subscribe to the repository. (typeworldgithub//)
 
 ### Versions
 
@@ -22,7 +26,7 @@ releaseDate
 `
 We need to represent above details and more in the Git repo. Git tags are used in other package systems for release management.
 
-- Users subscribe to the repository. (typeworldgithub//)
+- Users subscribe to the repository link.
 - TW app check the root of the repository for fontpackage.toml
 - If `versions.provider` is `github-tags` app will get the versions using the Github REST API tags.
 - With `versions.filter` publisher can remove specific tag or tags from being distributed as versions.
