@@ -1,5 +1,7 @@
 [fontpackage]
+
 name = "My Font Family"
+type = "family"
 version = ""
 release_channel = "" # `DEV, ALPHA, BETA, STABLE
 authors = ["", ""]
@@ -94,7 +96,6 @@ free = ""
 [[fonts]]
 # ...
 
-
 # Additional metadata and configuration for Type.World app
 [fontpackage.typeworld]
 foundry = [
@@ -124,9 +125,9 @@ config = ""
 [fontbakery]
 tests = ""
 
-[publish]
-[publish.npm]
-config = [""]
-name = ""
-name_suffix = ""
-keywords = ["typeface", "font", "font family"]
+# [build]
+# [build.npm]
+# config = [""]
+# name = ""
+# name_suffix = ""
+# keywords = ["typeface", "font", "font family"]
