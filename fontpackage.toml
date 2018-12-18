@@ -1,31 +1,83 @@
 [fontpackage]
 name = "My Font Family"
-version =
-license =
-summary =
-status = ""
-description =
-homepage = "..."
-repository = [ url = "", type = "github"]
-issuesURL = " "
+version = ""
+release_channel = "" # `DEV, ALPHA, BETA, STABLE
+authors = ["", ""]
+license = ""
+license-file = ""
+description = ""
+repository = { url = "", type = "github" }
+homepage_url = ""
+issues_url = ""
 date_published = ""
 fontlog = ""
-readme = ""
-download_url = ""
-designers = [ { name = "", email = "", url = "" },
-              { name = "", email = "", url = "" },
-              { name = "", email = "", url = "" }]
-billboards = [ banner = "",
-           thumbnail= "",
-           large = "" ]
+contribution_url = ""
+
+foundry = { name = "", email = "", url = "", vendor_id = "" }
+designers = [
+  { name = "", email = "", url = "" },
+  { name = "", email = "", url = "" },
+  { name = "", email = "", url = "" } ]
+
+tags = [
+  { category = "MONOSPACE"}, #serif, sans, display, monospace, script
+  { style = "" }, # Blackletter, Calligraphic, Condensed, Decorative, Display, Handdrawn, Monospaced, Rounded, Sans-serif, Script, Serif, Slab, Stencil, Symbols"
+  { contrast = "" },
+  { width =  "" },
+  { body_height =  "" },
+  { intended_use =  ""}, # large, medium, text, body, branding
+  { figures =  ""}, # Proportional Tabular Lining Non-Lining Ordinals Fractions Subscript Superscript Slashed Zero
+  { default_figure_style = "" },
+  { languages =  "" },
+  { similar_fonts =  "" }]
+
+private = ""
+maintenance = { status = "", comment = "" } # `actively-developed`, `passively-maintained`, `as-is`, `experimental`, `looking-for-maintainer`, `deprecated`, and the default `none`,}
+state = [
+  { family_styles = "", comment = "" },
+  { character_set = "", comment = "" },
+  { drawing_quality = "", comment = "" },
+  { spacing = "", comment = "" },
+  { kerning = "", comment = "" },
+  { hinting = "" , comment = "" },
+  { opentype_features = "", comment = ""}]
+
+print_specimen_url = ""
+
+display_texts = [
+  { en_US = ""},
+  { si_LK= ""},
+  { dv_IN= ""}]
+
+display_images = [
+    { banner = ""},
+    { small= ""},
+    { thumbnail= ""},
+    { medium = ""},
+    { small= ""},
+    { large = ""} ]
+
+links = [
+    { font_in_use = "" }, #
+    { googlefonts = "" },
+    { fontlibrary_org = "" },
+    { typekit = "" } ]
+
+versions = { provider = "github-tags", filter = "" }
+release_channels = [
+  { name = "ALPHA", url = "" },
+  { name = "BETA", url = "" } ]
+
+publish = ["npm", "typeworld", "appstream" ]
 
 
 [[fonts]]
 name = ""
 style = ""
-weight =
+weight = ""
 filename = ""
 post_script_name = ""
+url = ""
 full_name = ""
 copyright = ""
 preview_image = ""
@@ -36,42 +88,37 @@ format = ""
 free = ""
 
 
-[foundry]
-name =
-vendor_id =
-description =
-url =
-email =
-backgroundColor =
-support_email =
-skype =
-twitter =
-facebook =
-instagram =
 
-[tags]
-category = "MONOSPACE" #serif, sans, display, monospace, script
-tags = "" # Blackletter, Calligraphic, Condensed, Decorative, Display, Handdrawn, Monospaced, Rounded, Sans-serif, Script, Serif, Slab, Stencil, Symbols"
-contrast = [ ]
-width = [  ]
-body_height = [ ]
-intended_use = # large, medium, text, body, branding
-figures = # Proportional Tabular Lining Non-Lining Ordinals Fractions Subscript Superscript Slashed Zero
-default_figure_style =
-languages =
-similar_fonts =
+[fontpackage.typeworld]
+foundry = [
+    { name = "" },
+    { description = "" },
+    { url = "" },
+    { email = "" },
+    { backgroundColor = "" },
+    { support_email = "" },
+    { skype = "" },
+    { twitter = "" },
+    { facebook = "" },
+    { instagram = "" }]
+versions = { manager = "github-tags", filter = "" }
 
-[links]
-font_in_use = #
-googlefonts =
-fontlibrary_org =
 
-[distribution]
-targets = ""
-version_manager = 'github'
-releases_channels = [ { nightly ="", git_branch ="" },
-                      { beta = "", git_branch ="" } ]
 
 [develop]
 tools = ""
-build = ""
+
+[fontbakery]
+tests = ""
+
+[publish]
+config = [""]
+name = ""
+name_suffix = ""
+keywords = ["typeface", "font", "font family", "aileron"]
+
+[appstream]
+config = [""]
+name = ""
+name_suffix = ""
+keywords = ["typeface", "font", "font family", "aileron"]
