@@ -1,8 +1,6 @@
-# Fontpackage specification
+WORK IN PROGRESS
 
-**Version 0.1.0**
-
-**Status: Experimental, unstable draft**
+# Fontpackage / Type.World subscription
 
 ## Introduction
 
