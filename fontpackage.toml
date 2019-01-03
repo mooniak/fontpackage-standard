@@ -1,0 +1,133 @@
+[fontpackage]
+
+name = "My Font Family"
+type = "family"
+version = ""
+release_channel = "" # `DEV, ALPHA, BETA, STABLE
+authors = ["", ""]
+license = ""
+license-file = ""
+description = ""
+repository = { url = "", type = "github" }
+homepage_url = ""
+issues_url = ""
+date_published = ""
+fontlog = ""
+contribution_url = ""
+
+foundry = { name = "", email = "", url = "", vendor_id = "" }
+designers = [
+  { name = "", email = "", url = "" },
+  { name = "", email = "", url = "" },
+  { name = "", email = "", url = "" } ]
+
+private = ""
+maintenance = { status = "", comment = "" } # `actively-developed`, `passively-maintained`, `as-is`, `experimental`, `looking-for-maintainer`, `deprecated`, and the default `none`,}
+state = [
+  { family_styles = "", comment = "" },
+  { character_set = "", comment = "" },
+  { drawing_quality = "", comment = "" },
+  { spacing = "", comment = "" },
+  { kerning = "", comment = "" },
+  { hinting = "" , comment = "" },
+  { opentype_features = "", comment = ""}]
+
+tags = [
+  { category = ""}, #serif, sans, display, monospace, script
+  { style = "" }, # Blackletter, Calligraphic, Condensed, Decorative, Display, Handdrawn, Monospaced, Rounded, Sans-serif, Script, Serif, Slab, Stencil, Symbols"
+  { contrast = "" },
+  { width =  "" },
+  { body_height =  "" },
+  { intended_use =  ""}, # large, medium, text, body, branding
+  { figures =  ""}, # Proportional Tabular Lining Non-Lining Ordinals Fractions Subscript Superscript Slashed Zero
+  { default_figure_style = "" },
+  { languages =  "" },
+  { related_fonts =  "" }, ]
+
+# Font specific display strings. Can be used by clients to display font package and test
+print_specimen_url = ""
+
+# Font specific display strings. Can be used by clients to display font package and test
+display_texts = [
+  { en_US = ""},
+  { si_LK= ""},
+  { dv_IN= ""}]
+
+# Display images and promotional banners
+# Maps to Typw.World billboards
+display_images = [
+    { banner = ""},
+    { small= ""},
+    { thumbnail= ""},
+    { medium = ""},
+    { small= ""},
+    { large = ""} ]
+
+# External links and release channels
+links = [
+    { font_in_use = "" }, #
+    { googlefonts = "" },
+    { fontlibrary_org = "" },
+    { typekit = "" } ]
+
+versions = { provider = "github-tags", filter = "" }
+release_channels = [
+  { name = "ALPHA", url = "" },
+  { name = "BETA", url = "" } ]
+
+# List of fonts. objects for Type.World
+# TODO
+[[fonts]]
+name = ""
+style = ""
+weight = ""
+filename = ""
+post_script_name = ""
+url = ""
+full_name = ""
+copyright = ""
+preview_image = ""
+protected = ""
+purpose = ""
+variable_font = ""
+format = ""
+free = ""
+
+[[fonts]]
+# ...
+
+# Additional metadata and configuration for Type.World app
+[fontpackage.typeworld]
+foundry = [
+    { name = "" },
+    { description = "" },
+    { url = "" },
+    { email = "" },
+    { backgroundColor = "" },
+    { support_email = "" },
+    { skype = "" },
+    { twitter = "" },
+    { facebook = "" },
+    { instagram = "" }]
+versions = { manager = "github-tags", filter = "" }
+
+# Details realted to font development and tools needed for building. Could include build details
+[develop]
+tools = "" # Maps to tools key in UFR
+# TODO
+
+# Build
+[fontmake]
+config = ""
+
+# Configuration for fontbakery
+# TODO
+[fontbakery]
+tests = ""
+
+# [build]
+# [build.npm]
+# config = [""]
+# name = ""
+# name_suffix = ""
+# keywords = ["typeface", "font", "font family"]
