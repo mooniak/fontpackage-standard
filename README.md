@@ -4,7 +4,7 @@
 
 _Goals_
 - Develop a standard for font project repositories treating font project as a ‘font package’ (like-a-npm-package)
-- Develop an universal manifest file for the font package, providing metadata for direct distribution from the repository and consumption by conforming package managers or sync clients (primarily Type.World)
+- Develop an universal manifest file standard for the font package, providing metadata for direct distribution from the repository and consumption by conforming package managers or sync clients (primarily Type.World)
 - Provide tooling and workflows to easily build other kinds of packages from repository (ie; npm, Appstream specification)
 - Optionally use the same manifest file to include build and testing configurations
 
@@ -12,9 +12,9 @@ _Goals_
 
 - [Unified Font Repository](https://github.com/unified-font-repository/Unified-Font-Repository)
 - [Google Fonts repositories](https://github.com/googlefonts/Inconsolata)
-- [Google Fonts METADATA.pb ](https://github.com/googlefonts/Inconsolata/blob/master/METADATA.pb)s
-- [Appstream specification](https://github.com/unified-font-repository/Unified-Font-Repository/issues/25)
-
+- [Google Fonts METADATA.pb files ](https://github.com/googlefonts/Inconsolata/blob/master/METADATA.pb)
+- [Appstream specification metadata](https://github.com/unified-font-repository/Unified-Font-Repository/issues/25)
+- TODO: Add more
 
 ## Type.World Git subscription (Github)
 
@@ -36,6 +36,3 @@ Type.world [version](https://github.com/typeWorld/api/tree/master/Python/Lib/typ
 | `object`      |  `string` | SHA                       | SHA             |   |
 | `tagger.date` |  `string` | YYYY-MM-DDTHH:MM:SSZ      | YYYY-MM-DD      |   |
 | `object.url`  |  `string` |                           | <URL to source> |   |
-
-### Release channels
-TODO
