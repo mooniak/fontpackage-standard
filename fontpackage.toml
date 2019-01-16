@@ -1,29 +1,35 @@
 [fontpackage]
 
-name = "My Font Family" # REQUIERD
-type = "family" # REQUIERD
-version = "" # REQUIERD
-status = "" # REQUIERD [BETA, ALPHA, STABLE]
+name = "My Font Family" #REQUIERD
+type = "family" #REQUIERD
+version = "" #REQUIERD
+status = "" #REQUIERD [BETA, ALPHA, STABLE]
 authors = ["", ""]
-license = "" # REQUIERD
-license-file = "" # URL to licence file or EULA
-description = ""
-repository = { url = "", type = "github" }
-homepage_url = ""
-issues_url = ""
-date_published = ""
-fontlog = ""
+license = "" #REQUIERD
+license-file = "" #OPTIONAL URL to licence file or EULA
+description = "" #OPTIONAL
+repository = { url = "", type = "github" } #REQUIERD
+homepage_url = "" #OPTIONAL
+issues_url = "" #OPTIONAL
+date_published = "" #OPTIONAL
+fontlog = "" #OPTIONAL; defult location ./FONTLOG.md
 
-foundry = { name = "", email = "", url = "", vendor_id = "" }
-designers = [
+foundry = { name = "", email = "", url = "", vendor_id = "" } #OPTIONAL
+designers = [ #OPTIONAL
   { name = "", email = "", url = "" },
   { name = "", email = "", url = "" },
   { name = "", email = "", url = "" } ]
 
-private = "" # REQUIERD Boolean
-maintenance = { status = "", comment = "" } # OPTIONAL # `actively-developed`, `passively-maintained`, `as-is`, `experimental`, `looking-for-maintainer`, `deprecated`, and the default `none`,}
+private = "" #REQUIERD Boolean
+maintenance = { status = "", comment = "" } #OPTIONAL # `actively-developed`, `passively-maintained`, `as-is`, `experimental`, `looking-for-maintainer`, `deprecated`, and the default `none`,}
+versions_provider = "" #REQUIERD: This is `provider` could be github, gitlab or other git providers
 
-# OPTIONAL: NEEDS DISCUSSION
+#  Details realted to font development and build.
+tools = "" # Simila to tools key in UFR METADATA.yml
+
+
+############ DISPLAY - optional ############
+## Classification
 tags = [
   { category = ""}, #serif, sans, display, monospace, script
   { style = "" }, # Blackletter, Calligraphic, Condensed, Decorative, Display, Handdrawn, Monospaced, Rounded, Sans-serif, Script, Serif, Slab, Stencil, Symbols"
@@ -35,13 +41,14 @@ tags = [
   { languages =  "" },
   { related_fonts =  "" }, ]
 
-# OPTIONAL: Font specific display strings. Can be used by clients to display font package and test
+## OPTIONAL
+# Display strings: Font specific display strings. Can be used by clients to display font package and test
 display_texts = [
   { en_US = ""},
   { si_LK= ""},
   { dv_IN= ""}]
 
-# OPTIONAL: Display images and promotional banners
+##OPTIONAL Display images and promotional banners -
 # Maps to Type.World billboards
 display_images = [
     { banner = ""},
@@ -51,19 +58,32 @@ display_images = [
     { small= ""},
     { large = ""} ]
 
-# OPTIONAL: External links and release channels
+# External links and release channels - OPTIONAL
 links = [
     { font_in_use = "" }, #
     { googlefonts = "" },
     { fontlibrary_org = "" },
     { typekit = "" } ]
 
-# REQUIERD: `provider` defults to github-tags
-versions = { provider = "", exclude = "" }
+
+############ APP SPECIFIC DATA: TYPE.WORD additional data - OPTIONAL ############
+# Additional metadata and configuration for Type.World app
+[fontpackage.typeworld]
+foundry = [
+    { name = "" },
+    { description = "" },
+    { url = "" },
+    { email = "" },
+    { backgroundColor = "" },
+    { support_email = "" },
+    { skype = "" },
+    { twitter = "" },
+    { facebook = "" },
+    { instagram = "" }]
 
 
+############ FONTS - REQUIERD ################
 # List of font objects for Type.World
-# TODO
 [[fonts]]
 name = ""
 style = ""
@@ -82,21 +102,3 @@ free = ""
 
 [[fonts]]
 # ...
-
-# Additional metadata and configuration for Type.World app
-[fontpackage.typeworld]
-foundry = [
-    { name = "" },
-    { description = "" },
-    { url = "" },
-    { email = "" },
-    { backgroundColor = "" },
-    { support_email = "" },
-    { skype = "" },
-    { twitter = "" },
-    { facebook = "" },
-    { instagram = "" }]
-
-# Details realted to font development and build.
-[develop]
-tools = "" # Simila to tools key in UFR METADATA.yml
