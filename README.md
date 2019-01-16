@@ -6,15 +6,27 @@ _Goals_
 - Develop a standard for font project repositories treating font project as a ‘font package’ (like-a-npm-package)
 - Develop an universal manifest file standard for the font package, providing metadata for direct distribution from the repository and consumption by conforming package managers or sync clients (primarily Type.World)
 - Provide tooling and workflows to easily build other kinds of packages from repository (ie; npm, Appstream specification)
-- Optionally use the same manifest file to include build and testing configurations
+- Optionally use the same manifest file to include build and testing configurations for other tools (fontmake, fontbakery)
 
 ### Existing related projects and standards
 
-- [Unified Font Repository](https://github.com/unified-font-repository/Unified-Font-Repository)
+- [Unified Font Repository (UFR)](https://github.com/unified-font-repository/Unified-Font-Repository)
 - [Google Fonts repositories](https://github.com/googlefonts/Inconsolata)
 - [Google Fonts METADATA.pb files ](https://github.com/googlefonts/Inconsolata/blob/master/METADATA.pb)
 - [Appstream specification metadata](https://github.com/unified-font-repository/Unified-Font-Repository/issues/25)
 - TODO: Add more
+
+
+## Proposed solution
+
+The fontpackage standard is an extension of the [UFR](https://github.com/unified-font-repository/Unified-Font-Repository) standard. The manifest file `fontpackage.toml` on the root of the repo contains a superset of data provided in the 'METADATA.yml' of the UFR. `fontpackage.toml`  provides the information, metadata and classification data.
+
+There are four main blocks in `fontpackage.toml`
+- Basic metadata
+- Font file data
+- Display data (classification, display strings and image urls)
+- App specific blocks (Other metadata or config relating to specific apps)
+
 
 ## Type.World Git subscription (Github)
 
