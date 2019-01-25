@@ -2,17 +2,20 @@
 
 # Fontpackage specification
 
-## Fontpackage layout
+[TODO: Add an opening description]
+
+## Fontpackage file Structure
 
 While the Fontpackage standard aims to  standard is simple and requires only minimum dataset to validate. To be validate with Fontpackage a project team would only add `fontpackage.toml` at the root.  
 
 ```
+./fontpackage.toml
 ./fonts
   |--otf/
   |--ttf/
   |--webfonts/
         |--index.css
-./fontpackage.toml
+./images
 ```
 
 ## fontpackage.toml: the manifest file
@@ -25,44 +28,36 @@ There are four main blocks in `fontpackage.toml`
 - (classification, display strings and image urls)
 - App specific blocks (Other metadata or config relating to specific apps)
 
-## Distribution
 
-### Versions and git
-Type.world [version](https://github.com/typeWorld/api/tree/master/Python/Lib/typeWorld#class-version) object has the attributes `description``number``releaseDate`. We need to represent above details and more in the Git repository. Git tags are used in other package systems for release management.
+## Versions
 
-- Users subscribe to the repository link.
-- TW app reads the fontpackage manifest file in the root
-- If `versions.provider` is `tags` app will get the versions using the Github REST API tags.
-- With `versions.filter` publisher can remove specific tag or tags from being distributed as versions.
 
-|  GH Response  | Type      | Description               |  TW object      |   |
-|---            | ---       |---                        |---              |---|
-| `tag`         |  `string` | The tag's name on github. | -               |   |
-| `message`     |  `string` | The tag message.          | description     |   |
-| `object`      |  `string` | SHA                       | SHA             |   |
-| `tagger.date` |  `string` | YYYY-MM-DDTHH:MM:SSZ      | YYYY-MM-DD      |   |
-| `object.url`  |  `string` |                           | <URL to source> |   |
+## Authoring
+[TODO]
+
+### Git repositories and Fontpackage
+[TODO]
+
+_Unified Font Repository:_ UFR is a standard repository layout to organize font project sources; covering all files including documentation, tests, source files and etc. Fontpackage is a standard for distributing font binaries and metadata. Fontpackage is fully compatible with UFR structure.
+There are data duplication in the `METADATA.yml` and the `fontpackage.toml` This is something we have to
 
 ### Standalone archive (.fontpkg)
 [TODO]
 
 
-## Validating a Fontpackage
-[TODO]
+## Distributing
 
-### Fontpackage and other projects
-Fontpacakge is an accumulation of some of the earlier projects and builds on the existing standards and practices. Here is how Fontpackage is
-
-## Fontpackage and Unified Font Repository
-Unified Font Repository layout is a standard repository layout to organize font project sources; covering all files including documentation, tests, source files and etc. Fontpackage is a standard for distributing font binaries and metadata. Fontpackage is fully compatible with UFR structure.
-
-There are data duplication in the `METADATA.yml` and the `fontpackage.toml` This is something we have to
-
-## Fontpackage and npm
-[TODO]
+This specification aim to work with git artifacts and develop the standard to be provider-agnostic. Implementation will require working with APIs from respective Git service provider, in this case Github REST API.
 
 ### Type.World Git subscription (Github)
-Specification should aim to work with git artifacts and develop the standard to be provider-agnostic. Implementation will require working with APIs from respective Git service provider, in this case Github REST API.
+[TODO: Intro]
+
+### Fontlet package
+[TODO]
+
+### Fontpackage to npm
+[TODO]
+
 
 ## About
 
