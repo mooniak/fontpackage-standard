@@ -2,11 +2,12 @@
 
 # Fontpackage specification
 
-[TODO: Add an opening description]
+[TODO: Introduction and background]
+
 
 ## Fontpackage file Structure
 
-While the Fontpackage standard aims to  standard is simple and requires only minimum dataset to validate. To be validate with Fontpackage a project team would only add `fontpackage.toml` at the root.  
+While the Fontpackage standard aims to  standard is simple and requires only minimum dataset to validate. The core of the standard is the higely custmisable manifest file `fontpackage.toml` which sits at the root of the respository. The reccomended repository layout for Fontpackage is Unified Font Respository (UFR) layout, which defines a standard for orgnising all source files and documentation of a font project. However, fontpackage only requiers the following files to validate.
 
 ```
 ./fontpackage.toml
@@ -15,8 +16,9 @@ While the Fontpackage standard aims to  standard is simple and requires only min
   |--ttf/
   |--webfonts/
         |--index.css
-./images
 ```
+
+_NOTE:_  Package authours who choose not to use the UFR may point to font binaries and other files from the manifest file with URI relative to root. The minimum requierment for validating as a fontpackage is a `fontpackage.toml` at the root of the reposiotry, pointing to the font binaries.
 
 ## fontpackage.toml: the manifest file
 
@@ -64,7 +66,7 @@ This specification aim to work with git artifacts and develop the standard to be
 ### Goals
 - Develop a standard for font project repositories treating font project as a ‘font package’
 - Develop an universal standard for the font package, providing metadata for direct distribution from the repository and consumption by conforming package managers or sync clients (primarily Type.World)
-- Provide tooling and workflows to easily build other kinds of packages from repository (ie; npm, Appstream specification)
+- Provide tooling and workflow to easily packages fonts for other platforms (ie; npm, Appstream specification)
 - Optionally use the same manifest file to include build and testing configurations for other tools (fontmake, fontbakery)
 
 ### Existing related projects and standards
