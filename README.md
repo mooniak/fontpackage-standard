@@ -7,18 +7,27 @@
 
 ## Fontpackage file Structure
 
-While the Fontpackage standard aims to  standard is simple and requires only minimum dataset to validate. The core of the standard is the higely custmisable manifest file `fontpackage.toml` which sits at the root of the respository. The reccomended repository layout for Fontpackage is Unified Font Respository (UFR) layout, which defines a standard for orgnising all source files and documentation of a font project. However, fontpackage only requiers the following files to validate.
+While the Fontpackage standard aims to  standard is simple and requires only minimum dataset to validate. The core of the standard is the higely custmisable manifest file `fontpackage.toml` which sits at the root of the respository. The reccomended repository layout for Fontpackage is Unified Font Respository (UFR) layout, which defines a standard for orgnising all source files and documentation of a font project. However, Fontpackage only requiers the following files to validate.
 
 ```
-./fontpackage.toml
-./fonts
-  |--otf/
-  |--ttf/
-  |--webfonts/
-        |--index.css
+fontpackage.toml
+LICENSE
+FONTLOG.md
+▾ fonts #This is compatible with UFR and the defult location for binaries.
+  ▾ otf/
+      *.otf
+  ▾ otf/
+      *.otf
+  ▾ webfonts/
+      *.woff
+      *.woff2
+      index.css
 ```
 
 _NOTE:_  Package authours who choose not to use the UFR may point to font binaries and other files from the manifest file with URI relative to root. The minimum requierment for validating as a fontpackage is a `fontpackage.toml` at the root of the reposiotry, pointing to the font binaries.
+
+[TODO: Include complete layout]
+
 
 ## fontpackage.toml: the manifest file
 
@@ -36,6 +45,9 @@ There are four main blocks in `fontpackage.toml`
 
 ## Authoring
 [TODO]
+
+_NOTE:_ [TODO: Explanation] Why we commit binaries to the git repo? 
+
 
 ### Git repositories and Fontpackage
 [TODO]
@@ -58,6 +70,10 @@ This specification aim to work with git artifacts and develop the standard to be
 [TODO]
 
 ### Fontpackage to npm
+[TODO]
+
+
+## FAQ
 [TODO]
 
 
