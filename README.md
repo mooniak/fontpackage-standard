@@ -69,11 +69,12 @@ This specification aim to work with git artifacts and develop the standard to be
 
 ### Existing related projects and standards
 - [Unified Font Repository (UFR)](https://github.com/unified-font-repository/Unified-Font-Repository)
-- [Google Fonts repositories](https://github.com/googlefonts/Inconsolata)
-- [Google Fonts METADATA.pb files ](https://github.com/googlefonts/Inconsolata/blob/master/METADATA.pb)
+- [Google Fonts repositories](https://github.com/googlefonts/Inconsolata) Standard followed by the most of Google Fonts repositories
+- [Google Fonts METADATA.pb files ](https://github.com/googlefonts/Inconsolata/blob/master/METADATA.pb): Metadata files in Google Fonts repositories by Google Fonts
 - [Appstream specification metadata](https://github.com/unified-font-repository/Unified-Font-Repository/issues/25)
 - [Foundry in a Box](https://gitlab.com/foundry-in-a-box/fib)
 - [typefaces](https://github.com/KyleAMathews/typefaces): NPM packages for Open Source typefaces.
+- [fontctrl](https://fontctrl.org): A package manager for fonts
 
 ### Credits
 [TODO]
