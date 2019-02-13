@@ -1,0 +1,17 @@
+/*!
+ *  Demo font family webfonts
+ */
+
+@font-face {
+  font-family: 'Demo';
+  src: url('webfonts/Demo-Regular.woff2') format('woff2'), url('webfonts/Demo-Regular.woff2'') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Demo';
+  src: url('webfonts/Demo-Regular.woff2') format('woff2'), url('webfonts/Demo-Regular.woff2'') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
