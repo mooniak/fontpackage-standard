@@ -36,9 +36,7 @@ The manifest file `fontpackage.toml` on the root of the repo contains a superset
 There are four main blocks in `fontpackage.toml`
 - Package metadata (required)
 - Display and classification data (optional)
-- (classification, display strings and image urls)
 - App specific blocks (Other metadata or config relating to specific apps)
-
 
 ## Versions
 
