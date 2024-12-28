@@ -16,6 +16,7 @@ description = "" #OPTIONAL
 repository = { url = "", type = "git"} #REQUIERD
 homepage_url = "" #OPTIONAL
 issues_url = "" #OPTIONAL
+funding_url = "" #OPTIONAL
 date_published = "" #OPTIONAL: Date first published
 fontlog = "" #OPTIONAL: Defults to ROOT (./FONTLOG.md ./FONTLOG.txt ./CHANGELOG.txt) Defult format Markdown .md
 foundry = { name = "", email = "", url = "", vendor_id = "" } #OPTIONAL:
@@ -29,6 +30,16 @@ maintenance = { status = "", comment = "" } #OPTIONAL: # `actively-developed`, `
 versions_provider = "" #REQUIERD: How is the font versions provided. When set to 'tags' the versions will be fetched from the git tags.
 
 tools = "" #OPTIONAL: Details realted to font development and build. Similar to tools key in UFR METADATA.yml
+
+progress = [ #OPTIONAL: Progress and of the project out of 100 percentage.
+    { design = "" },
+    { family_styles = "" },
+    { character_set =  "" },
+    { drawing_quality =  "" },
+    { spacing =  ""}, 
+    { kerning =  ""},
+    { hinting =  "" },
+    { opentype_features =  "" }, ]
 
 ########################################################################
 # DISPLAY AND CLASSIFCATION DATA #######################################
@@ -49,7 +60,7 @@ display_texts = [ #OPTIONAL: Pakage specific display strings for display and tes
     { si_LK= ""},
     { dv_IN= ""}]
 
-# Maps to Type.World billboards
+# Display images and promotional banners
 display_images = [ #OPTIONAL Display images and promotional banners
     { banner = ""},
     { small= ""},
@@ -89,8 +100,8 @@ free = "" #REQUIERD
 # APP OR PLATFOROM SPECIFIC CONFIGS AND DATA ###########################
 ########################################################################
 
-# Additional metadata and configuration for Type.World protocol
-[fontpackage.typeworld]
+# Additional metadata on the foundry
+[fontpackage.extras]
 foundry = [
     { name = "" },
     { description = "" },
