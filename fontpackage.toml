@@ -100,19 +100,9 @@ free = "" #REQUIERD
 # APP OR PLATFOROM SPECIFIC CONFIGS AND DATA ###########################
 ########################################################################
 
-# Additional metadata on the foundry
+# Additional metadata
 [fontpackage.extras]
-foundry = [
-    { name = "" },
-    { description = "" },
-    { url = "" },
-    { email = "" },
-    { backgroundColor = "" },
-    { support_email = "" },
-    { skype = "" },
-    { twitter = "" },
-    { facebook = "" },
-    { instagram = "" }]
+# …
 
 # Additional metadata to generate NPM packages
 [fontpackage.npm]
